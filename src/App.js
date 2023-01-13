@@ -1,31 +1,29 @@
-import logo from './cook-9.jpg';
+
 import './App.css';
-import Video from './Video';
+import Navigation from './components/layout/Navigation'
+import EducationPage from './pages/Eductaion'
+import ExperiencePage from './pages/Experience'
+import PersonalPage from './pages/Personal'
+import { Route, Routes } from 'react-router-dom'
+import React from 'react';
+
+const isShowWelcome = true;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="cookie" />
-        <p>
-          Happy New Year 2023!
-        </p>
-        <p>
-          Check the <a
-          className="App-link"
-                      href="https://github.com/KarinaDabbraccio/Django"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-           Django app
-        </a> presentation on GitHub.
-        </p>
-              <div>
-                  <Video />
-              </div>
-      </header>
+      <div className="App">
+          <Navigation />
+         
+          <Routes>
+              <Route path='/resume' exact element={<ExperiencePage />} />
+              <Route path='/education' element={<EducationPage />} />
+              <Route path='/personal-info' element={<PersonalPage />} />
+          </Routes>
+
+
     </div>
   );
 }
 
 export default App;
+export { isShowWelcome };
