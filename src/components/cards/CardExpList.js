@@ -2,7 +2,7 @@ import ExperienceCard from './ExperienceCard'
 
 function CardExpList(props) {
 	return (
-		<div className="mx-auto w-50">
+		<div className="mx-auto col-sm-7 p-3">
 		<ul className="list-group mx-auto">
 			{props.exps.map((exp) => (
 				<ExperienceCard

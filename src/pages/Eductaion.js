@@ -25,9 +25,9 @@ const edStyle = {
 
 function EducationPage() {
 	return (
-		<section className="mb-3">
+		<section className="mb-3 p-3">
 			<h1 className="m-3">Eductaion</h1>
-			<div className="mx-auto w-50">
+			<div className="mx-auto col-sm-7">
 				<ul className="list-group mx-auto">
 				{EDUCATION_DATA.map((ed) => {
 					return (
@@ -41,9 +41,9 @@ function EducationPage() {
 				</ul>
 			</div>
 
-			<div className="mx-auto w-50 mt-3 bg-light row" style={edStyle}>
-				<div className='col-4 p-0'><h5>Personal project</h5></div>
-				<div className='col-8 p-0'>
+			<div className="mx-auto col-sm-7 mt-3 bg-light row" style={edStyle}>
+				<div className='col-sm-4 p-0'><h5>Personal project</h5></div>
+				<div className='col-sm-8 p-0'>
 					<p>Check the <a
 						className="App-link"
 						href="https://github.com/KarinaDabbraccio/Django"
@@ -52,7 +52,7 @@ function EducationPage() {
 					>Django app</a> presentation on GitHub.
 					</p>
 				</div>
-				<div classname='row pl-0'>
+				<div classname='row pl-0' style={{ maxWidth: '560px' }}>
 					<Video />
 				</div>
 			</div>

@@ -12,12 +12,6 @@ h1 {
     margin-left:150px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 30s linear;
-  }
-}
-
 .App-header {
     background-color: #243763;
     min-height: 100vh;

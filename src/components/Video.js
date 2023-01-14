@@ -15,8 +15,7 @@ function Video() {
 
             {isVisible && (
                 <iframe
-                    width="560"
-                    height="315"
+                    width="100%"
                     src="https://www.youtube.com/embed/2iuFNH1RdH0"
                     frameBorder="0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"

@@ -6,7 +6,7 @@ function Navigation() {
 		<header>
 			
 			<nav className='navbar navbar-expand-lg navbar-light bg-light navbar-brand p-3' >
-				<img src= {logo} className="App-logo" alt="cookie" />
+				<img src= {logo} className="App-logo" alt="Karina" />
 				<ul className="navbar-nav">
 					<li className="nav-item">
 						<Link to='/resume' className="nav-link">Experience</Link>

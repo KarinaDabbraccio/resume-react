@@ -38,7 +38,6 @@ const EXPERIENCE_DATA = [
 
 function ExperiencePage() {
 
-
 	return (
 		<section className='mb-3'>
 			<h1 className='m-3'>Professional Experience</h1>
